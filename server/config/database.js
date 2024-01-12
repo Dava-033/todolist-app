@@ -6,3 +6,4 @@ const db = new Sequelize('DFEProject_pagepolice','DFEProject_pagepolice', 'e1318
 });
 
 export default db;
+//test
