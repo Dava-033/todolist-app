@@ -11,7 +11,7 @@ const UserList = () => {
 
 const getUsers = async () => {
   try {
-    const response = await axios.get("http://localhost:3307/users");
+    const response = await axios.get("http://localhost:5000/users");
     setUser(response.data);
   } catch (error) {
     console.error("Error fetching users:", error);
@@ -20,7 +20,7 @@ const getUsers = async () => {
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:3307/users/${id}`);
+      await axios.delete(`http://localhost:5000/users/${id}`);
       getUsers();
     } catch (error) {
       console.log(error);
