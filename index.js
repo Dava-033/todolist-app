@@ -4,10 +4,11 @@ import UserRoute from "./routes/UserRoute.js";
 
 const app = express();
 app.use(cors({
-    origin: 'http://znk.h.filess.io:3000', // Sesuaikan dengan origin React Anda
+    origin: 'http://localhost:3000', // Sesuaikan dengan origin React Anda
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }));
+
 
 // const app = express();
 // app.use(cors());
