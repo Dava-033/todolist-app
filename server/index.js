@@ -11,11 +11,12 @@ app.use(cors({
 
 app.use(express.json());
 app.use(UserRoute);
-const HOST = 'znk.h.filess.io';
+// const HOST = 'znk.h.filess.io';
 const PORT = 5000;
 
 app.listen(PORT, ()=> 
-console.log(`API running at... ${HOST}:${PORT}!`));
+console.log("Server up and running"));
+// console.log(`API running at... ${HOST}:${PORT}!`));
 
 export default app;
 // export default app;
