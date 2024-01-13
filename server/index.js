@@ -3,6 +3,12 @@ import cors from "cors";
 import UserRoute from "./routes/UserRoute.js";
 
 const app = express();
+
+app.get('/', (req, res) => {
+        res.send('Expresss Vercel App Response')
+});
+
+
 app.use(cors({
     origin: 'http://localhost:3001', // Sesuaikan dengan origin React Anda
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
