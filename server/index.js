@@ -18,3 +18,4 @@ app.listen(PORT, ()=>
 console.log(`API running at... ${HOST}:${PORT}!`));
 
 export default app;
+// export default app;
