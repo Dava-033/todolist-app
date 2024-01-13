@@ -4,10 +4,9 @@ import UserRoute from "./routes/UserRoute.js";
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.use('/res', (req, res) => {
         res.send('Expresss Vercel App Response')
 });
-
 
 app.use(cors({
     origin: 'http://localhost:3001', // Sesuaikan dengan origin React Anda
@@ -17,12 +16,9 @@ app.use(cors({
 
 app.use(express.json());
 app.use(UserRoute);
-// const HOST = 'znk.h.filess.io';
-const PORT = 5000;
 
+const PORT = 5000;
 app.listen(PORT, ()=> 
 console.log("Server up and running"));
-// console.log(`API running at... ${HOST}:${PORT}!`));
 
 export default app;
-// export default app;
